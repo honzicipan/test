@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Poznámkovník</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+        
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Poznámkovník</h1>
+
+<br>
+<div class="hla"></div>
+<br>
+<div id="paper">
+  <div id="pattern">
+
+  	<div class="wrapper">
+
+    <div id="content">
+    	<br>
+		<form method="POST" action="/">
+		    {{ form.csrf_token }}
+		    {{ form.poznamka() }}
+		      <div class="test">
+		      	<div class="testmenu" >
+		    		<input type="submit" value="&#xf0c7" class="fa fa-save" style="font-size:48px;color:white">
+		    		<br></br>
+					<a href="/poznamky" class="texta"><i class="fa fa-file-text-o" style="font-size:48px;color:white"></i></a>
+		    	</div>
+
+		     </div>
+		</form>
+	</br>
+		
+
+
+		</div>
+
+	</div>
+ 	 </div>
+
+ 	   <div class="holes hole-top"></div>
+  <div class="holes hole-middle"></div>
+  <div class="holes hole-bottom"></div>
+</div>		
+	
+</body>
+</html>
